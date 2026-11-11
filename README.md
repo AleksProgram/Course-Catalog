@@ -1,16 +1,73 @@
-# React + Vite
+# Course Catalog
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple course catalog application built with **React** and **Vite**.
 
-Currently, two official plugins are available:
+## About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Course Catalog is a React application that displays a list of available courses. Each course contains information about its title, teacher, duration, price, and availability status.
 
-## React Compiler
+The project demonstrates the use of React components, props, rendering lists, and conditional rendering.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the Oxlint configuration
+- Display a list of courses.
+- Show course information:
+    - Course title
+    - Teacher name
+    - Duration in hours
+    - Price in USD
+    - Availability status
+- Display availability status:
+    - Available
+    - Enrollment closed
+- Show a message when no courses are found.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│   ├── CourseList.jsx
+│   ├── CourseCard.jsx
+│   └── AvailabilityBadge.jsx
+├── data/
+│   └── courses.js
+├── App.jsx
+└── main.jsx
+```
+
+## Technologies
+
+- React
+- JavaScript
+- Vite
+- HTML
+- CSS
+
+## Learning Objectives
+
+This project helps practice:
+
+- Creating reusable React components.
+- Passing data through props.
+- Rendering lists using `.map()`.
+- Using unique `key` props.
+- Conditional rendering with ternary operators.
+- Working with static data and JavaScript objects.
+
+## Getting Started
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
